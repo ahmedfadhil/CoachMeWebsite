@@ -37,16 +37,4 @@ Use it freely but please do not republish, distribute or sell "as-is". [Read mor
 
 [Elegant Icons](http://www.elegantthemes.com/blog/resources/elegant-icon-font/) by Elegant Themes. Licensed under [MIT](http://opensource.org/licenses/mit-license.html)
 
-### Images
-
-[Image Pricing 1](https://www.flickr.com/photos/130855607@N05/16086503254/sizes/o/)
-
-Other images from [Pixabay](https://pixabay.com/)
-
-## Misc
-
-Follow us: [Twitter](http://www.twitter.com/codrops), [Facebook](http://www.facebook.com/pages/Codrops/159107397912), [Google+](https://plus.google.com/101095823814290637419), [GitHub](https://github.com/codrops), [Pinterest](http://www.pinterest.com/codrops/)
-
-[© Codrops 2015](http://www.codrops.com)
-
-
+ 
