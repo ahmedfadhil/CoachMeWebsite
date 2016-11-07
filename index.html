@@ -1,726 +1,772 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>CoachMe</title>
-	<meta name="description" content="CoachMe is a Platform to Promote Healthy Lifestyle By Taking Small Actions and Maintaining Them." />
-	<meta name="keywords" content="Health & Wellbeing, Persuasive Technology, Bot" />
-	<meta name="author" content="Ahmed Fadhil" />
-	<!-- Favicons (created with http://realfavicongenerator.net/)-->
-	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-	<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="img/favicons/manifest.json">
-	<link rel="shortcut icon" href="img/favicons/favicon.ico">
-	<meta name="msapplication-TileColor" content="#00a8ff">
-	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
-	<!-- Normalize -->
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<!-- Owl -->
-	<link rel="stylesheet" type="text/css" href="css/owl.css">
-	<!-- Animate.css -->
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">
-	<!-- Elegant Icons -->
-	<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
-	<!-- Main style -->
-	<link rel="stylesheet" type="text/css" href="css/cardio.css">
-<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,700" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoachMe</title>
+    <meta name="description"
+          content="CoachMe is a Platform to Promote Healthy Lifestyle By Taking Small Actions and Maintaining Them."/>
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css2/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css2/icomoon.css">
-	<!-- Bootstrap  -->
+    <meta property="og:title" content="CoachMe"/>
+    <meta property="og:site_name" content="CoachMeBot"/>
+    <meta property="og:description"
+          content="CoachMe is a Platform to Promote Healthy Lifestyle By Taking Small Actions and Maintaining Them."/>
+    <meta property="og:image" content="http://ict4g.org/coachme/img/logo.png "/>
+    <meta name="keywords" content="Health & Wellbeing, Persuasive Technology, Bot"/>
+    <meta name="author" content="Ahmed Fadhil"/>
+    <!-- Favicons (created with http://realfavicongenerator.net/)-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00a8ff">
+    <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Owl -->
+    <link rel="stylesheet" type="text/css" href="css/owl.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">
+    <!-- Elegant Icons -->
+    <link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
+    <!-- Main style -->
+    <link rel="stylesheet" type="text/css" href="css/cardio.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,700" rel="stylesheet">
 
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css2/flexslider.css">
-	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css2/owl.carousel.min.css">
-	<link rel="stylesheet" href="css2/owl.theme.default.min.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css2/style.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css2/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css2/icomoon.css">
+    <!-- Bootstrap  -->
 
-<script src="js/modernizr-2.6.2.min.js"></script>
-</head>
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css2/flexslider.css">
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css2/owl.carousel.min.css">
+    <link rel="stylesheet" href="css2/owl.theme.default.min.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css2/style.css">
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    </head>
 
 <body>
-	<div class="preloader">
-		<img src="img/loader.gif" alt="Preloader image">
-	</div>
-	<nav class="navbar">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#"><img style="height: 59px;" src="img/logo.png" data-active-url="img/logo-active.png" alt="CoachME"></a>
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right main-nav">
-					<li><a href="#intro">Home</a></li>
-					<li><a href="#About">About</a></li>
-					<!-- <li><a href="#team">Team</a></li> -->
-					<li><a href="#research">Research</a></li>
-					<li><a href="#technology">Technology/Experimentation</a></li>
-					<li><a href="#projects">Related Projects</a></li>
-					<li><a href="#collaboration">Collaboration</a></li>
-					<li><a href="#publications">Publications</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<!-- <li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign Up</a></li> -->
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container-fluid -->
-	</nav>
-	<header id="intro">
-		<div class="container">
-			<div class="table">
-				<div class="header-text">
-					<div class="row">
-						<div class="col-md-12 text-center coachme">
-						<h3><img src="img/coachme.png" alt="CoachME"></h3>
+<div class="preloader">
+    <img src="img/loader.gif" alt="Preloader image">
+</div>
+<nav class="navbar">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img style="height: 59px;" src="img/logo.png"
+                                                  data-active-url="img/logo-active.png" alt="CoachME"></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right main-nav">
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <!-- <li><a href="#team">Team</a></li> -->
+                <li><a href="#research">Research</a></li>
+                <li><a href="#technology">Technology/Experimentation</a></li>
+                <li><a href="#projects">Related Projects</a></li>
+                <li><a href="#collaboration">Collaboration</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign Up</a></li> -->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<header id="intro">
+    <div class="container">
+        <div class="table">
+            <div class="header-text">
+                <div class="row">
+                    <div class="col-md-12 text-center coachme">
+                        <h3><img src="img/coachme.png" alt="CoachME"></h3>
 
-							<h1 class="light white">A Platform to Promote Healthy Lifestyle</h1>
-							<h3 class="white typed">Towards an easier, more effective healthy lifestyle ...</h3>
-							<span class="typed-cursor">|</span>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</header>
-	<section>
-		<div class="cut cut-top"></div>
-		<div class="container">
-			<div class="row intro-tables">
-
-				<div class="col-md-4">
-					<div class="intro-table intro-table-hover">
-						<h5 class="white heading hide-hover">Long-term Adherence</h5>
-						<div class="bottom">
-							<h4 class="white heading small-heading no-margin regular">Difficulty in</h4>
-							<h4 class="white heading small-pt">Sustaining User Engagement</h4>
-							<a  class="btn btn-white-fill expand">Long-term Adherence</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="intro-table intro-table-hover">
-						<h5 class="white heading hide-hover">User Preferences</h5>
-						<div class="bottom">
-							<h4 class="white heading small-heading no-margin regular">Differences in </h4>
-							<h4 class="white heading small-pt">lifestyle Choices</h4>
-							<a  class="btn btn-white-fill expand">User Preferences</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="intro-table intro-table-hover">
-						<h5 class="white heading hide-hover">User Heterogeneity</h5>
-						<div class="bottom">
-							<h4 class="white heading small-heading no-margin regular">Diversity in</h4>
-							<h4 class="white heading small-pt">User's Habits and Preferences</h4>
-							<a  class="btn btn-white-fill expand">User Heterogeneity</a>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-	<section id="About" class="section section-padded">
-		<div id="fh5co-services-section">
-
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2 class="margin-top">CoachMe: A Platform to Promote Healthy Lifestyle</h2>
-				<h4 class="light muted">Introducing simplicity and human-actor in the process of lifestyle promotion</h4>
-			</div>
-			<div class="row services">
-				<div class="col-md-4">
-					<div class="service">
-						<div class="icon-holder">
-							<img src="img/icons/funky-Heart-Electrocardiogram.svg" alt="" class="icon">
-						</div>
-						<h4 class="heading">Tailored Approaches</h4>
-						<p class="description text-center">Provide an activity that fits with user's needs</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="service">
-						<div class="icon-holder">
-							<img src="img/icons/weight-blue.svg" alt="" class="icon">
-						</div>
-						<h4 class="heading">Simplicity</h4>
-						<p class="description text-center">Introduce an activity as simple as a button click</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="service">
-						<div class="icon-holder">
-							<img src="img/icons/guru-blue.svg" alt="" class="icon">
-						</div>
-						<h4 class="heading">Expert Support</h4>
-						<p class="description text-center">On top of the simplicity, provide the user with a real coach support</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-		</div>
-		<div class="cut cut-bottom"></div>
-		<div class="fh5co-about">
-		<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-			<h2>Why CoachMe?</h2>
-			<p>Various health risk factors are correlated to poor dietary habits
-and sedentary lifestyle. Healthy lifestyle relies on modifiable
-behaviors that help prevent a wide range of diseases, such
-as obesity and diabetes. Such diseases present economical
-and health burden for the society, as its complications can
-be life-threatening. The purpose of the proposed investigation is to test whether ICT systems are effective in maintaining user adherence to a healthy lifestyle and prevent the escalation and shift from healthy to at-risk stage. We focus on providing users with initial action, then try to maintain it. In summary, help the user to help himself. </p>
-		</div>
-		<div class="container">
-			<div class="col-md-12">
-				<figure>
-					<img src="images/about-img.png" alt="Free HTML5 Template" class="img-responsive">
-				</figure>
-			</div>
-			<div class="col-md-4 text-center item-block">
-				<h3>The Objectives</h3>
-				<p>We focus on providing users with initial action, then try to maintain it. For
-that, instead of relying on system recommendations, we introduce a human-expert in the process to tune the activity when relevant. This will introduce simplicity in user-system
-interaction, since it focuses on simple activities and follows "is able to do?" instead of "have to
-do!" approach. We introduce a new interaction paradigm where user-coach interact through the
-console. Based on common paradigm the coach provides standard personalised model specific
-for each user.
-Moreover, a human actor is more effective in overcoming limitations introduced by automation and recommendation systems, since a human can better react to more
-complex user needs and handle their emotions, that is hard to achieve with system automation.
-In addition, the research focuses on addressing user heterogeneity problem in diet management
-and investigates a tailored approach per user and a way to maintain the user coach relation.</p>
-
-					<p>
-					<!-- <a href="#" class="btn btn-primary btn-outline with-arrow">Learn more <i class="icon fa fa-arrow-right"></i></a></p> -->
-				</div>
-				<div class="col-md-4 text-center item-block">
-					<h3>The Scope</h3>
-					<p>This research addresses user heterogeneity and hybrid system challenges which often fail to react
-to user needs. Based on the literature research, there is a need for a real coach, especially
-when dealing with a sensitive issue, such as diet management. Since a human actor can provide
-more precise emotional and health support and better understand user struggle. Virtual coaches
-are effective in providing training sessions, however, they are unable to provide social support
-that a real coach can. In addition, real coaches are flexible when dealing with various users.
-More specifically, they can change the level of communication with people of different level of
-preparedness, preferences and ages. In summary, unlike automated systems, real coaches can
-communicate the language of the user.</p>
-<p>
-<!-- <a href="#" class="btn btn-primary btn-outline with-arrow">Learn more <i class="icon fa fa-arrow-right"></i></a></p> -->
-				</div>
-				<div class="col-md-4 text-center item-block">
-					<h3>The Methodology</h3>
-
-					<p>This research focuses on designing for long-term feedback and engagement with the system.
-Moreover, It takes an approach to involve users in their own health through
-quantiffed-self techniques. There is a need to consider user's lifestyle and the role of technology
-in their life. Also, consider personalisation in the diet management process. To illustrate, asking
-users to record the food they don't like to avoid recommending them. The methodology focuses
-on simplicity and positive reinforcement for future activities. The coach feedback is given by a
-health expert who accesses and monitors user activities through a dashboard that contains user
-compliance data.
-</p>
-<p>
-<!-- <a href="#" class="btn btn-primary btn-outline with-arrow">Learn more <i class="icon fa fa-arrow-right"></i></a></p> -->
-				</div>
-		</div>
-	</div>
-	</section>
-	</section>
-
-	<section id="research" class="section white-bg gray-bg">
-	<div id="fh5co-services-section">
-
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2 class="margin-top">Research</h2>
-
-					<p>The approach in CoachMe is based on providing the user with small activities and short-term plans, such that they are simple to perform and sustainable. The activity
-intensity increase as user progresses. The set of diet activities form a goal, and set of goals
-form a goal hierarchy which, in turn, forms the overall diet management plan. Our approach
-is based on research in user experience (UX) design, gamification in user motivation, persuasive
-technologies, and introducing a human actor in the process. </p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="services">
-						<i class="icon fa fa-gamepad"></i>
-						<div class="desc">
-							<h3>Gamification</h3>
-							<p>
-Treating uses
-as a massive group is a bad
-design strategy and has its
-associated weaknesses related
-to decreased engagement with
-the application. Employing
-game elements is an effective
-strategy to overcome these
-challenges, since it stimulates
-user engagement in the activity.
-However, carefully choosing
-the proper game element is
-essential, since otherwise it
-might leads to adverse reaction
-and increase the adoption of
-unhealthy behavior. </p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="services">
-						<i class="icon fa fa-rocket"></i>
-						<div class="desc">
-							<h3>Persuasive Technologies</h3>
-							<p>Current persuasive
-systems are still limited in
-sustaining user behavior. Hybrid
-systems (technology + self
-coaching) often fail to provide
-social support and understanding
-user needs. We hypothesis
-a human actor can provide
-more than just a general feedback
-and encouragement. Having
-a human expert in the activity
-is essential to build social
-support and empathy with the user.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="services">
-						<i class="icon fa fa-lightbulb-o"></i>
-						<div class="desc">
-							<h3>Quantified-Self</h3>
-							<p>Involving users in their care through quantified-self techniques
-and a human actor to monitor and intervene when
-necessary will form a healthcare community with individuals
-to empower them in a user friendly way, such that they achieve a better diet and promote their lifestyle. Moreover, most of the approaches rely on system recommendation to adhere user to a self-management plan, which often fails to respond to user’s need and to sustain the activity.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="services">
-						<i class="icon fa fa-users"></i>
-						<div class="desc">
-							<h3>Social Network</h3>
-							<p>The literature reveals
-user interest towards social
-interaction, mainly competition
-and collaboration. However,
-individuals are more likely
-to related to personally relevant
-messages, as opposed to
-more generic once. This links
-the activity to match the cognitive,
-emotional, and physical attributes
-of the user. We consider
-such aspect of interaction
-by harnessing technologymediated
-persuasion. </p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="services">
-						<i class="icon fa fa-user-md"></i>
-						<div class="desc">
-							<h3>Coaching</h3>
-							<p>Our distinguishing contribution is to tailor
-the user-system interaction with a human coach. Unlike
-most interventions, we employ a coach based diet management service to boost behavioral change in user by tuning
-their diet plan. The system provides the capability for the
-coach to instantly interact with the user when a relapse state
-is detected. This approach will address the limitations and
-relations of user-to-system interactions that is purely automated and has moderate effect in health behavior change.
-</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="services">
-						<i class="icon fa fa-gamepad"></i>
-						<div class="desc">
-							<h3>Personalization</h3>
-							<p>Research increasingly suggests that each of us is unique in the way we absorb and metabolize nutrients. This also applies to the level of prepartness to change and perform a behaviour. This dawning realization has proved that applying a one-size-fits-all would not work for all users. Since we have different preferences and lifestyles. Therefore, personalization and providong a tailored approach is essential to increase the effectiveness of the given activity.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	</section>
-	<section id="technology" class="section">
-		<div id="fh5co-work-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-						<h2>Technology/Experimentation</h2>
-						<p class="text-center">The technologies used in the experimentation and the prototype desing and implementation</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<a class="item-grid text-center">
-							<div class="image" style="background-image: url(images/image_1.jpg)"></div>
-							<div class="v-align">
-								<div class="v-align-middle">
-									<h3 class="title">CoachMe Bot</h3>
-									<h5 class="category">Telegram Bot + Web Application</h5>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a class="item-grid text-center">
-							<div class="image" style="background-image: url(images/image_2.jpg)"></div>
-							<div class="v-align">
-								<div class="v-align-middle">
-									<h3 class="title">CoachMe Android</h3>
-									<h5 class="category">Android + Web Application</h5>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a class="item-grid text-center">
-							<div class="image" style="background-image: url(images/image_3.jpg)"></div>
-							<div class="v-align">
-								<div class="v-align-middle">
-									<h3 class="title">Gamification</h3>
-									<h5 class="category">User Motivation</h5>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a class="item-grid text-center">
-							<div class="image" style="background-image: url(images/image_4.jpg)"></div>
-							<div class="v-align">
-								<div class="v-align-middle">
-									<h3 class="title">Coaching</h3>
-									<h5 class="category">User Monitoring</h5>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a class="item-grid text-center">
-							<div class="image" style="background-image: url(images/image_5.jpg)"></div>
-							<div class="v-align">
-								<div class="v-align-middle">
-									<h3 class="title">Persuasion</h3>
-									<h5 class="category">User Engagement</h5>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a class="item-grid text-center">
-							<div class="image" style="background-image: url(images/image_6.jpg)"></div>
-							<div class="v-align">
-								<div class="v-align-middle">
-									<h3 class="title">Food Data Analysis</h3>
-									<h5 class="category">User Daily Diet</h5>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-12 text-center">
-						<p><a class="btn btn-primary with-arrow">More Data Coming Soon <i class="icon fa fa-arrow-right"></i></a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="projects" class="section gray-bg">
-			<div id="fh5co-blog-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-						<h2>Related Projects</h2>
-						<p class="text-center">Some prototypes have been developed to validate our approach and provide a proof of concept about our work</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-sm-6">
-						<a class="item-grid">
-							<div class="image" style="background-image: url(images/image_1.jpg)"></div>
-							<div class="v-align">
-								<div class="v-align-middle">
-									<h3 class="title">CoachMe Telegram Bot</h3>
-									<h5 class="date"><span>Human-Bot interaction with a coach through Rails application</span> | <span>Prototype</span></h5>
-									<p>Messaging apps are increasingly used by mobile
-users. This has become even more applicable in many domains
-with the introduction of bots. We present the
-design and development of CoachMe Bot a diet management
-bot using Telegram API. The developed bot follows a rule
-based reasoning and allows more than a user to interact with
-and provides users activity to the coach through a Rails web
-application.</p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-6 col-sm-6">
-						<a class="item-grid">
-							<div class="image" style="background-image: url(images/image_2.jpg)"></div>
-							<div class="v-align">
-								<div class="v-align-middle">
-									<h3 class="title">CoachMe Android App</h3>
-									<h5 class="date"><span>User-coach interaction through an Android and Rails application</span> | <span>Prototype</span></h5>
-									<p>Messaging apps are increasingly used by mobile
-users. In parallel to the bot applicatin, we are working on an Android application that achieves the same functionalities as with the bot. We present the design and development of CoachMe Android a diet management
-app + Rails Web application. The aim with this tool is to test introducing simplicity in the process of diet managemetn and its effect on user motivation.</p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-12 text-center">
-						<!-- <p><a href="#" class="btn btn-primary with-arrow">View More Post <i class="icon fa fa-arrow-right"></i></a></p> -->
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-	</section>
-	<section id="collaboration" class="section">
-		<div id="fh5co-blog-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-						<h2>Collaboration</h2>
-						<p class="text-center">CoachMe application is the result of a PhD thesis in Computer Science conducted by Ahmed Fadhil</p>
-					</div>
-					<div class="col-md-4 col-md-offset-4">
-					<div class="team text-center">
-					<a href="http://ict4g.org/home/" class="item-grid" target="_blank">
-						<div class="cover" style="background:url('img/team/team-cover2.jpg'); background-size:cover;">
-							<div class="overlay text-center">
-								<h3 class="white">HCI - Health & Wellbeing</h3>
-								<h5 class="light light-white">ICT4G Research Unit</h5>
-							</div>
-						</div>
-						<img src="img/team/team1.jpg" alt="Team Image" class="avatar">
-						<div class="title">
-							<h4>Ahmed Fadhil</h4>
-							<h5 class="muted regular">PhD Student</h5>
-						</div>
-						<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill ripple">Personal Website</a>
-				</div>
-
-		</div>
-
-					</div>
-				</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="publications" class="section gray-bg">
-		<div id="fh5co-work-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-						<h2>Publications</h2>
-						<p>Some of the publications and ongoing work on CoachMe research</p>
-					</div>
-				</div>
-
-			<div class="container">
-	<div class="row">
-
-        <div class="timeline-centered">
-
-        <article class="timeline-entry">
-
-            <div class="timeline-entry-inner">
-
-                <div class="timeline-icon bg-success fa fa-check">
-                    <i class="entypo-feather"></i>
-                </div>
-
-                <div class="timeline-label">
-                    <h2><a href="http://dl.acm.org/citation.cfm?id=2965004">Fadhil et al.,</a> <span>2016</span></h2>
-                    <p>CoachMe: a platform for promoting healthy lifestyle. In Proceedings of the 18th International Conference on Human-Computer Interaction with Mobile Devices and Services Adjunct (MobileHCI '16). ACM, New York, NY, USA, 1077-1080. DOI: http://dx.doi.org/10.1145/2957265.2965004</p>
-                </div>
-            </div>
-
-        </article>
-<!--
-
-        <article class="timeline-entry">
-
-            <div class="timeline-entry-inner">
-
-                <div class="timeline-icon bg-secondary">
-                    <i class="entypo-suitcase"></i>
-                </div>
-
-                <div class="timeline-label">
-                    <h2><a href="#">Job Meeting</a></h2>
-                    <p>You have a meeting at <strong>Laborator Office</strong> Today.</p>
-                </div>
-            </div>
-
-        </article> -->
-
-
-       <!--  <article class="timeline-entry">
-
-            <div class="timeline-entry-inner">
-
-                <div class="timeline-icon bg-info">
-                    <i class="entypo-location"></i>
-                </div>
-
-                <div class="timeline-label">
-                    <h2><a href="#">Arlind Nushi</a> <span>checked in at</span> <a href="#">Laborator</a></h2>
-
-                    <blockquote>Great place, feeling like in home.</blockquote>
-
-
-                </div>
-            </div>
-
-        </article> -->
-
-<!--
-        <article class="timeline-entry">
-
-            <div class="timeline-entry-inner">
-
-                <div class="timeline-icon bg-warning">
-                    <i class="entypo-camera"></i>
-                </div>
-
-                <div class="timeline-label">
-                    <h2><a href="#">Arber Nushi</a> <span>changed his</span> <a href="#">Profile Picture</a></h2>
-
-                    <blockquote>Pianoforte principles our unaffected not for astonished travelling are particular.</blockquote> -->
-
-                    <!-- <img src="http://themes.laborator.co/neon/assets/images/timeline-image-3.png" class="img-responsive img-rounded full-width"> -->
-                <!-- </div>
-            </div>
-
-        </article>
- -->
-
-        <article class="timeline-entry begin">
-
-            <div class="timeline-entry-inner">
-
-                <div class="timeline-icon" style="-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg);">
-                    <i class="fa fa-lg fa-mortar-board "></i>
+                        <h1 class="light white">A Platform to Promote Healthy Lifestyle</h1>
+                        <h3 class="white typed">Towards an easier, more effective healthy lifestyle ...</h3>
+                        <span class="typed-cursor">|</span>
+                    </div>
                 </div>
 
             </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="cut cut-top"></div>
+    <div class="container">
+        <div class="row intro-tables">
 
-        </article>
+            <div class="col-md-4">
+                <div class="intro-table intro-table-hover">
+                    <h5 class="white heading hide-hover">Long-term Adherence</h5>
+                    <div class="bottom">
+                        <h4 class="white heading small-heading no-margin regular">Difficulty in</h4>
+                        <h4 class="white heading small-pt">Sustaining User Engagement</h4>
+                        <a class="btn btn-white-fill expand">Long-term Adherence</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="intro-table intro-table-hover">
+                    <h5 class="white heading hide-hover">User Preferences</h5>
+                    <div class="bottom">
+                        <h4 class="white heading small-heading no-margin regular">Differences in </h4>
+                        <h4 class="white heading small-pt">lifestyle Choices</h4>
+                        <a class="btn btn-white-fill expand">User Preferences</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="intro-table intro-table-hover">
+                    <h5 class="white heading hide-hover">User Heterogeneity</h5>
+                    <div class="bottom">
+                        <h4 class="white heading small-heading no-margin regular">Diversity in</h4>
+                        <h4 class="white heading small-pt">User's Habits and Preferences</h4>
+                        <a class="btn btn-white-fill expand">User Heterogeneity</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="About" class="section section-padded">
+    <div id="fh5co-services-section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+                    <h2 class="margin-top">CoachMe: A Platform to Promote Healthy Lifestyle</h2>
+                    <h4 class="light muted">Introducing simplicity and human-actor in the process of lifestyle
+                        promotion</h4>
+                </div>
+                <div class="row services">
+                    <div class="col-md-4">
+                        <div class="service">
+                            <div class="icon-holder">
+                                <img src="img/icons/funky-Heart-Electrocardiogram.svg" alt="" class="icon">
+                            </div>
+                            <h4 class="heading">Tailored Approaches</h4>
+                            <p class="description text-center">Provide an activity that fits with user's needs</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service">
+                            <div class="icon-holder">
+                                <img src="img/icons/weight-blue.svg" alt="" class="icon">
+                            </div>
+                            <h4 class="heading">Simplicity</h4>
+                            <p class="description text-center">Introduce an activity as simple as a button click</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service">
+                            <div class="icon-holder">
+                                <img src="img/icons/guru-blue.svg" alt="" class="icon">
+                            </div>
+                            <h4 class="heading">Expert Support</h4>
+                            <p class="description text-center">On top of the simplicity, provide the user with a real
+                                coach support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cut cut-bottom"></div>
+    <div class="fh5co-about">
+        <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+            <h2>Why CoachMe?</h2>
+            <p>Various health risk factors are correlated to poor dietary habits
+                and sedentary lifestyle. Healthy lifestyle relies on modifiable
+                behaviors that help prevent a wide range of diseases, such
+                as obesity and diabetes. Such diseases present economical
+                and health burden for the society, as its complications can
+                be life-threatening. The purpose of the proposed investigation is to test whether ICT systems are
+                effective in maintaining user adherence to a healthy lifestyle and prevent the escalation and shift from
+                healthy to at-risk stage. We focus on providing users with initial action, then try to maintain it. In
+                summary, help the user to help himself. </p>
+        </div>
+        <div class="container">
+            <div class="col-md-12">
+                <figure>
+                    <img src="images/about-img.png" alt="Free HTML5 Template" class="img-responsive">
+                </figure>
+            </div>
+            <div class="col-md-4 text-center item-block">
+                <h3>The Objectives</h3>
+                <p>We focus on providing users with initial action, then try to maintain it. For
+                    that, instead of relying on system recommendations, we introduce a human-expert in the process to
+                    tune the activity when relevant. This will introduce simplicity in user-system
+                    interaction, since it focuses on simple activities and follows "is able to do?" instead of "have to
+                    do!" approach. We introduce a new interaction paradigm where user-coach interact through the
+                    console. Based on common paradigm the coach provides standard personalised model specific
+                    for each user.
+                    Moreover, a human actor is more effective in overcoming limitations introduced by automation and
+                    recommendation systems, since a human can better react to more
+                    complex user needs and handle their emotions, that is hard to achieve with system automation.
+                    In addition, the research focuses on addressing user heterogeneity problem in diet management
+                    and investigates a tailored approach per user and a way to maintain the user coach relation.</p>
+
+                <p>
+                    <!-- <a href="#" class="btn btn-primary btn-outline with-arrow">Learn more <i class="icon fa fa-arrow-right"></i></a></p> -->
+            </div>
+            <div class="col-md-4 text-center item-block">
+                <h3>The Scope</h3>
+                <p>This research addresses user heterogeneity and hybrid system challenges which often fail to react
+                    to user needs. Based on the literature research, there is a need for a real coach, especially
+                    when dealing with a sensitive issue, such as diet management. Since a human actor can provide
+                    more precise emotional and health support and better understand user struggle. Virtual coaches
+                    are effective in providing training sessions, however, they are unable to provide social support
+                    that a real coach can. In addition, real coaches are flexible when dealing with various users.
+                    More specifically, they can change the level of communication with people of different level of
+                    preparedness, preferences and ages. In summary, unlike automated systems, real coaches can
+                    communicate the language of the user.</p>
+                <p>
+                    <!-- <a href="#" class="btn btn-primary btn-outline with-arrow">Learn more <i class="icon fa fa-arrow-right"></i></a></p> -->
+            </div>
+            <div class="col-md-4 text-center item-block">
+                <h3>The Methodology</h3>
+
+                <p>This research focuses on designing for long-term feedback and engagement with the system.
+                    Moreover, It takes an approach to involve users in their own health through
+                    quantiffed-self techniques. There is a need to consider user's lifestyle and the role of technology
+                    in their life. Also, consider personalisation in the diet management process. To illustrate, asking
+                    users to record the food they don't like to avoid recommending them. The methodology focuses
+                    on simplicity and positive reinforcement for future activities. The coach feedback is given by a
+                    health expert who accesses and monitors user activities through a dashboard that contains user
+                    compliance data.
+                </p>
+                <p>
+                    <!-- <a href="#" class="btn btn-primary btn-outline with-arrow">Learn more <i class="icon fa fa-arrow-right"></i></a></p> -->
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+<section id="research" class="section white-bg gray-bg">
+    <div id="fh5co-services-section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+                    <h2 class="margin-top">Research</h2>
+
+                    <p>The approach in CoachMe is based on providing the user with small activities and short-term
+                        plans, such that they are simple to perform and sustainable. The activity
+                        intensity increase as user progresses. The set of diet activities form a goal, and set of goals
+                        form a goal hierarchy which, in turn, forms the overall diet management plan. Our approach
+                        is based on research in user experience (UX) design, gamification in user motivation, persuasive
+                        technologies, and introducing a human actor in the process. </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="services">
+                        <i class="icon fa fa-gamepad"></i>
+                        <div class="desc">
+                            <h3>Gamification</h3>
+                            <p>
+                                Treating uses
+                                as a massive group is a bad
+                                design strategy and has its
+                                associated weaknesses related
+                                to decreased engagement with
+                                the application. Employing
+                                game elements is an effective
+                                strategy to overcome these
+                                challenges, since it stimulates
+                                user engagement in the activity.
+                                However, carefully choosing
+                                the proper game element is
+                                essential, since otherwise it
+                                might leads to adverse reaction
+                                and increase the adoption of
+                                unhealthy behavior. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="services">
+                        <i class="icon fa fa-rocket"></i>
+                        <div class="desc">
+                            <h3>Persuasive Technologies</h3>
+                            <p>Current persuasive
+                                systems are still limited in
+                                sustaining user behavior. Hybrid
+                                systems (technology + self
+                                coaching) often fail to provide
+                                social support and understanding
+                                user needs. We hypothesis
+                                a human actor can provide
+                                more than just a general feedback
+                                and encouragement. Having
+                                a human expert in the activity
+                                is essential to build social
+                                support and empathy with the user.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="services">
+                        <i class="icon fa fa-lightbulb-o"></i>
+                        <div class="desc">
+                            <h3>Quantified-Self</h3>
+                            <p>Involving users in their care through quantified-self techniques
+                                and a human actor to monitor and intervene when
+                                necessary will form a healthcare community with individuals
+                                to empower them in a user friendly way, such that they achieve a better diet and promote
+                                their lifestyle. Moreover, most of the approaches rely on system recommendation to
+                                adhere user to a self-management plan, which often fails to respond to user’s need and
+                                to sustain the activity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="services">
+                        <i class="icon fa fa-users"></i>
+                        <div class="desc">
+                            <h3>Social Network</h3>
+                            <p>The literature reveals
+                                user interest towards social
+                                interaction, mainly competition
+                                and collaboration. However,
+                                individuals are more likely
+                                to related to personally relevant
+                                messages, as opposed to
+                                more generic once. This links
+                                the activity to match the cognitive,
+                                emotional, and physical attributes
+                                of the user. We consider
+                                such aspect of interaction
+                                by harnessing technologymediated
+                                persuasion. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="services">
+                        <i class="icon fa fa-user-md"></i>
+                        <div class="desc">
+                            <h3>Coaching</h3>
+                            <p>Our distinguishing contribution is to tailor
+                                the user-system interaction with a human coach. Unlike
+                                most interventions, we employ a coach based diet management service to boost behavioral
+                                change in user by tuning
+                                their diet plan. The system provides the capability for the
+                                coach to instantly interact with the user when a relapse state
+                                is detected. This approach will address the limitations and
+                                relations of user-to-system interactions that is purely automated and has moderate
+                                effect in health behavior change.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="services">
+                        <i class="icon fa fa-gamepad"></i>
+                        <div class="desc">
+                            <h3>Personalization</h3>
+                            <p>Research increasingly suggests that each of us is unique in the way we absorb and
+                                metabolize nutrients. This also applies to the level of prepartness to change and
+                                perform a behaviour. This dawning realization has proved that applying a
+                                one-size-fits-all would not work for all users. Since we have different preferences and
+                                lifestyles. Therefore, personalization and providong a tailored approach is essential to
+                                increase the effectiveness of the given activity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="technology" class="section">
+    <div id="fh5co-work-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+                    <h2>Technology/Experimentation</h2>
+                    <p class="text-center">The technologies used in the experimentation and the prototype desing and
+                        implementation</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <a class="item-grid text-center">
+                        <div class="image" style="background-image: url(images/image_1.jpg)"></div>
+                        <div class="v-align">
+                            <div class="v-align-middle">
+                                <h3 class="title">CoachMe Bot</h3>
+                                <h5 class="category">Telegram Bot + Web Application</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="item-grid text-center">
+                        <div class="image" style="background-image: url(images/image_2.jpg)"></div>
+                        <div class="v-align">
+                            <div class="v-align-middle">
+                                <h3 class="title">CoachMe Android</h3>
+                                <h5 class="category">Android + Web Application</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="item-grid text-center">
+                        <div class="image" style="background-image: url(images/image_3.jpg)"></div>
+                        <div class="v-align">
+                            <div class="v-align-middle">
+                                <h3 class="title">Gamification</h3>
+                                <h5 class="category">User Motivation</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="item-grid text-center">
+                        <div class="image" style="background-image: url(images/image_4.jpg)"></div>
+                        <div class="v-align">
+                            <div class="v-align-middle">
+                                <h3 class="title">Coaching</h3>
+                                <h5 class="category">User Monitoring</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="item-grid text-center">
+                        <div class="image" style="background-image: url(images/image_5.jpg)"></div>
+                        <div class="v-align">
+                            <div class="v-align-middle">
+                                <h3 class="title">Persuasion</h3>
+                                <h5 class="category">User Engagement</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="item-grid text-center">
+                        <div class="image" style="background-image: url(images/image_6.jpg)"></div>
+                        <div class="v-align">
+                            <div class="v-align-middle">
+                                <h3 class="title">Food Data Analysis</h3>
+                                <h5 class="category">User Daily Diet</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-12 text-center">
+                    <p><a class="btn btn-primary with-arrow">More Data Coming Soon <i
+                            class="icon fa fa-arrow-right"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="projects" class="section gray-bg">
+    <div id="fh5co-blog-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+                    <h2>Related Projects</h2>
+                    <p class="text-center">Some prototypes have been developed to validate our approach and provide a
+                        proof of concept about our work</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <a class="item-grid">
+                        <div class="image" style="background-image: url(images/image_1.jpg)"></div>
+                        <div class="v-align">
+                            <div class="v-align-middle">
+                                <h3 class="title">CoachMe Telegram Bot</h3>
+                                <h5 class="date">
+                                    <span>Human-Bot interaction with a coach through Rails application</span> | <span>Prototype</span>
+                                </h5>
+                                <p>Messaging apps are increasingly used by mobile
+                                    users. This has become even more applicable in many domains
+                                    with the introduction of bots. We present the
+                                    design and development of CoachMe Bot a diet management
+                                    bot using Telegram API. The developed bot follows a rule
+                                    based reasoning and allows more than a user to interact with
+                                    and provides users activity to the coach through a Rails web
+                                    application.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <a class="item-grid">
+                        <div class="image" style="background-image: url(images/image_2.jpg)"></div>
+                        <div class="v-align">
+                            <div class="v-align-middle">
+                                <h3 class="title">CoachMe Android App</h3>
+                                <h5 class="date">
+                                    <span>User-coach interaction through an Android and Rails application</span> |
+                                    <span>Prototype</span></h5>
+                                <p>Messaging apps are increasingly used by mobile
+                                    users. In parallel to the bot applicatin, we are working on an Android application
+                                    that achieves the same functionalities as with the bot. We present the design and
+                                    development of CoachMe Android a diet management
+                                    app + Rails Web application. The aim with this tool is to test introducing
+                                    simplicity in the process of diet managemetn and its effect on user motivation.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-12 text-center">
+                    <!-- <p><a href="#" class="btn btn-primary with-arrow">View More Post <i class="icon fa fa-arrow-right"></i></a></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<section id="collaboration" class="section">
+    <div id="fh5co-blog-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+                    <h2>Collaboration</h2>
+                    <p class="text-center">CoachMe application is the result of a PhD thesis in Computer Science
+                        conducted by Ahmed Fadhil</p>
+                </div>
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="team text-center">
+                        <a href="http://ict4g.org/home/" class="item-grid" target="_blank">
+                            <div class="cover"
+                                 style="background:url('img/team/team-cover2.jpg'); background-size:cover;">
+                                <div class="overlay text-center">
+                                    <h3 class="white">HCI - Health & Wellbeing</h3>
+                                    <h5 class="light light-white">ICT4G Research Unit</h5>
+                                </div>
+                            </div>
+                            <img src="img/team/team1.jpg" alt="Team Image" class="avatar">
+                            <div class="title">
+                                <h4>Ahmed Fadhil</h4>
+                                <h5 class="muted regular">PhD Student</h5>
+                            </div>
+                            <a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill ripple">Personal
+                                Website</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
 
     </div>
+    </div>
+    </div>
+</section>
+<section id="publications" class="section gray-bg">
+    <div id="fh5co-work-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+                    <h2>Publications</h2>
+                    <p>Some of the publications and ongoing work on CoachMe research</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="timeline-centered">
+
+                        <article class="timeline-entry">
+
+                            <div class="timeline-entry-inner">
+
+                                <div class="timeline-icon bg-success fa fa-check">
+                                    <i class="entypo-feather"></i>
+                                </div>
+
+                                <div class="timeline-label">
+                                    <h2><a href="http://dl.acm.org/citation.cfm?id=2965004">Fadhil et al.,</a> <span>2016</span>
+                                    </h2>
+                                    <p>CoachMe: a platform for promoting healthy lifestyle. In Proceedings of the 18th
+                                        International Conference on Human-Computer Interaction with Mobile Devices and
+                                        Services Adjunct (MobileHCI '16). ACM, New York, NY, USA, 1077-1080. DOI:
+                                        http://dx.doi.org/10.1145/2957265.2965004</p>
+                                </div>
+                            </div>
+
+                        </article>
+                        <!--
+
+                                <article class="timeline-entry">
+
+                                    <div class="timeline-entry-inner">
+
+                                        <div class="timeline-icon bg-secondary">
+                                            <i class="entypo-suitcase"></i>
+                                        </div>
+
+                                        <div class="timeline-label">
+                                            <h2><a href="#">Job Meeting</a></h2>
+                                            <p>You have a meeting at <strong>Laborator Office</strong> Today.</p>
+                                        </div>
+                                    </div>
+
+                                </article> -->
 
 
-	</div>
+                        <!--  <article class="timeline-entry">
+
+                             <div class="timeline-entry-inner">
+
+                                 <div class="timeline-icon bg-info">
+                                     <i class="entypo-location"></i>
+                                 </div>
+
+                                 <div class="timeline-label">
+                                     <h2><a href="#">Arlind Nushi</a> <span>checked in at</span> <a href="#">Laborator</a></h2>
+
+                                     <blockquote>Great place, feeling like in home.</blockquote>
+
+
+                                 </div>
+                             </div>
+
+                         </article> -->
+
+                        <!--
+                                <article class="timeline-entry">
+
+                                    <div class="timeline-entry-inner">
+
+                                        <div class="timeline-icon bg-warning">
+                                            <i class="entypo-camera"></i>
+                                        </div>
+
+                                        <div class="timeline-label">
+                                            <h2><a href="#">Arber Nushi</a> <span>changed his</span> <a href="#">Profile Picture</a></h2>
+
+                                            <blockquote>Pianoforte principles our unaffected not for astonished travelling are particular.</blockquote> -->
+
+                        <!-- <img src="http://themes.laborator.co/neon/assets/images/timeline-image-3.png" class="img-responsive img-rounded full-width"> -->
+                        <!-- </div>
+                    </div>
+
+                </article>
+         -->
+
+                        <article class="timeline-entry begin">
+
+                            <div class="timeline-entry-inner">
+
+                                <div class="timeline-icon"
+                                     style="-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg);">
+                                    <i class="fa fa-lg fa-mortar-board "></i>
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="table">
+                    <div class="header-text">
+                        <div class="row">
+                            <div class="col-md-12 text-center coachme">
+                                <h3><img src="images/bye.png" alt="CoachMe"></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section id="contact" class="section">
+    <div class="container">
+        <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+            <h2>Contact</h2>
+            <ul class="contact-info">
+                <li><i class="icon fa fa-map"></i>Via Sommarive, 18 I-38123 Povo (TN), Trento-Italy</li>
+                <li><i class="icon fa fa-envelope"></i><a href="fadhil@fbk.eu">Ahmed Fadhil: fadhil@fbk.eu</a></li>
+                <li><i class="icon fa fa-globe"></i><a href="http://ict4g.org/home/">ICT4G Unit</a></li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+<footer id="fh5co-footer" role="contentinfo">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+        <p>&copy; 2016 CoachMe. All Rights Reserved. <span>Designed with <i class="icon fa fa-heart"></i> by <a
+                href="http://freehtml5.co/" target="_blank">freehtml5.co</a></p>
+    </div>
+    <div class="col-md-4">
+    </div>
+</footer>
+<!-- Holder for mobile navigation -->
+<div class="mobile-nav">
+    <ul>
+    </ul>
+    <a href="#" class="close-link"><i class="arrow_up"></i></a>
 </div>
-	<div class="container">
-		<div class="table">
-			<div class="header-text">
-				<div class="row">
-					<div class="col-md-12 text-center coachme">
-						<h3><img src="images/bye.png" alt="CoachMe"></h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<!-- Scripts -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/typewriter.js"></script>
+<script src="js/jquery.onepagenav.js"></script>
+<script src="js/main.js"></script>
+<!-- jQuery -->
+<script src="js2/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js2/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js2/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js2/jquery.waypoints.min.js"></script>
+<!-- Owl Carousel -->
+<script src="js2/owl.carousel.min.js"></script>
+<!-- Flexslider -->
+<script src="js2/jquery.flexslider-min.js"></script>
 
-	</section>
-	<section id="contact" class="section">
-		<div class="container">
-		<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-						<h2>Contact</h2>
-						<ul class="contact-info">
-						<li><i class="icon fa fa-map"></i>Via Sommarive, 18 I-38123 Povo (TN), Trento-Italy</li>
-						<li><i class="icon fa fa-envelope"></i><a href="fadhil@fbk.eu">Ahmed Fadhil: fadhil@fbk.eu</a></li>
-						<li><i class="icon fa fa-globe"></i><a href="http://ict4g.org/home/">ICT4G Unit</a></li>
-					</ul>
-		</div>
-
-		</div>
-	</section>
-	<footer id="fh5co-footer" role="contentinfo">
-		<div class="col-md-4">
-		</div>
-			<div class="col-md-4">
-				<p>&copy; 2016 CoachMe. All Rights Reserved. <span>Designed with <i class="icon fa fa-heart"></i> by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></p>
-			</div>
-			<div class="col-md-4">
-		</div>
-	</footer>
-	<!-- Holder for mobile navigation -->
-	<div class="mobile-nav">
-		<ul>
-		</ul>
-		<a href="#" class="close-link"><i class="arrow_up"></i></a>
-	</div>
-	<!-- Scripts -->
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/typewriter.js"></script>
-	<script src="js/jquery.onepagenav.js"></script>
-	<script src="js/main.js"></script>
-	<!-- jQuery -->
-	<script src="js2/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js2/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js2/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js2/jquery.waypoints.min.js"></script>
-	<!-- Owl Carousel -->
-	<script src="js2/owl.carousel.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js2/jquery.flexslider-min.js"></script>
-
-	<!-- MAIN JS -->
-	<script src="js2/main.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js2/google_map.js"></script>
+<!-- MAIN JS -->
+<script src="js2/main.js"></script>
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+<script src="js2/google_map.js"></script>
 </body>
 
 </html>
