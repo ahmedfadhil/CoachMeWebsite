@@ -1,16 +1,13 @@
-# "Cardio" One Page Website Template
+# CoachMe Website
 
-"CoachME" is a one page website template made by [PHIr](http://www.phir.co/) exclusively for Codrops.
+CoachMe is a one page website template made by Ahmed Fadhil for the reseach on ICT solutions in health and welness.
 
-[Download on Codrops](http://tympanus.net/codrops/?p=24301)
-
-[Demo](http://tympanus.net/Freebies/Cardio/)
+Information about the Template: The template was designed by freehtml5.co
 
 ## License
 
 Use it freely but please do not republish, distribute or sell "as-is". [Read more about our license.](http://tympanus.net/codrops/licensing/)
 
-## Credits 
 
 ### Bootstrap
 
@@ -40,16 +37,4 @@ Use it freely but please do not republish, distribute or sell "as-is". [Read mor
 
 [Elegant Icons](http://www.elegantthemes.com/blog/resources/elegant-icon-font/) by Elegant Themes. Licensed under [MIT](http://opensource.org/licenses/mit-license.html)
 
-### Images
-
-[Image Pricing 1](https://www.flickr.com/photos/130855607@N05/16086503254/sizes/o/)
-
-Other images from [Pixabay](https://pixabay.com/)
-
-## Misc
-
-Follow us: [Twitter](http://www.twitter.com/codrops), [Facebook](http://www.facebook.com/pages/Codrops/159107397912), [Google+](https://plus.google.com/101095823814290637419), [GitHub](https://github.com/codrops), [Pinterest](http://www.pinterest.com/codrops/)
-
-[© Codrops 2015](http://www.codrops.com)
-
-
+ 
